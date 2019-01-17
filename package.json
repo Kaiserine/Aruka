@@ -1,0 +1,16 @@
+{
+	"name": "Aruka",
+	"version": "0.0.1",
+	"description": "Aruka bot!",
+	"main": "robot.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "node robot.js"
+	},
+	"author": "Nanika",
+	"license": "ISC",
+	"dependencies": {
+		"discord.js": "^11.3.2",
+		"leet": "^1.3.0"
+	}
+}
