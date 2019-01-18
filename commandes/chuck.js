@@ -6,6 +6,7 @@ const run= async(robot, message, commandes, prefixe)=> {
 			message.channel.send('Hu hu hu, une erreur est survenu ^^');
 		} else {
 			let fact= JSON.parse(corps);
+			console.log(fact);
 			message.channel.send({embed: {
 				title: "Chuck Norris Facts",
 				description: fact.fact,
