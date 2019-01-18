@@ -1,5 +1,5 @@
 const entiteHTMLlist= {
-	'&quot;': 34,		'&amp;': 38,		'&#39;': 39,		'&lt;': 60,			'&gt;': 62,			'&nbsp;': 160,
+	'&quot;': 34,		'&amp;': 38,		'&#39;': 39,		'&lt;': 60,		'&gt;': 62,		'&nbsp;': 160,
 	'&iexcl;': 161,		'&cent;': 162,		'&pound;': 163,		'&curren;': 164,	'&yen;': 165,		'&brvbar;': 166,
 	'&sect;': 167,		'&uml;': 168,		'&copy;': 169,		'&ordf;': 170,		'&laquo;': 171,		'&not;': 172,
 	'&shy;': 173,		'&reg;': 174,		'&macr;': 175,		'&deg;': 176,		'&plusmn;': 177,	'&sup2;': 178,
