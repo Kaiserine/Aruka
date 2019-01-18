@@ -22,7 +22,7 @@ const entiteHTMLlist= {
 };
 
 const entiteHTML= (texte)=> {
-	return /&[a-zA-Z0-9]+;/gi[Symbol.replace](texte, (a)=> {
+	return /&[#a-zA-Z0-9]+;/gi[Symbol.replace](texte, (a)=> {
 		let hex= /&#([a-fA-F0-9]+);/;
 		if(hex.test(a)) {
 			return hex[Symbol.replace](a, (a,b)=> {
