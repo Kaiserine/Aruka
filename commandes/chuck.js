@@ -1,4 +1,4 @@
-const entiteHTMLlist= [
+const entiteHTMLlist= {
 	'&nbsp;': 160,		'&iexcl;': 161,		'&cent;': 162,		'&pound;': 163,		'&curren;': 164,
 	'&yen;': 165,		'&brvbar;': 166,	'&sect;': 167,		'&uml;': 168,		'&copy;': 169,
 	'&ordf;': 170,		'&laquo;': 171,		'&not;': 172,		'&shy;': 173,		'&reg;': 174,
@@ -19,7 +19,7 @@ const entiteHTMLlist= [
 	'&otilde;': 245,	'&ouml;': 246,		'&divide;': 247,	'&oslash;': 248,	'&ugrave;': 249,
 	'&uacute;': 250,	'&ucirc;': 251,		'&uuml;': 252,		'&yacute;': 253,	'&thorn;': 254,
 	'&yuml;': 255,		'&amp;': 38
-];
+};
 
 const entiteHTML= (texte)=> {
 	return /&[a-zA-Z0-9]+;/gi[Symbol.replace](texte, (a)=> {
