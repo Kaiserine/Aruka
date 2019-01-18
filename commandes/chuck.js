@@ -9,7 +9,7 @@ const run= async(robot, message, commandes, prefixe)=> {
 			message.channel.send({embed: {
 				title: "Chuck Norris Facts",
 				description: /&#([a-fA-F0-9]+);/gi[Symbol.replace](fact.fact, (a,b)=> {
-					return String.fromCharCode(parseInt(b, 16));
+					return String.fromCharCode(parseInt(b, 10));
 				}),
 				color: 15143599,
 				footer: {text: `id:${fact.id} | vote:${fact.vote} | points:${fact.points}`}
