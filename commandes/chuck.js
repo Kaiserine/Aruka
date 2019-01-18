@@ -8,7 +8,9 @@ const run= async(robot, message, commandes, prefixe)=> {
 			let fact= JSON.parse(corps)[0];
 			message.channel.send({embed: {
 				title: "Chuck Norris Facts",
-				description: fact.fact,
+				description: /&#([a-fA-F0-9]+);/gi[Symbol.replace](fact.fact, (a,b)=> {
+					return String.fromCharCode(parseInt(b, 16));
+				}),
 				color: 15143599,
 				footer: {text: `id:${fact.id} | vote:${fact.vote} | points:${fact.points}`}
 			}});
